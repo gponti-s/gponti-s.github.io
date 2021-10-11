@@ -49,6 +49,8 @@ body {
 
 .brand{
     font-style: oblique;
+    font-weight: bold;
+    font-size: larger;
     font-family:'Courier New', Courier, monospace;
     justify-content: left;
 }
@@ -60,13 +62,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.portifolio-item-wrapper{
-    position: relative;
-}
 
 .portifolio-img-background{
     height: 350px;
-    width: 100%;
+    width: 350px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,8 +80,6 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 150px;
-    padding-right: 150px;
 }
 
 .logo-wrapper img{
@@ -94,6 +91,7 @@ body {
     transition: 0.6s;
     font-weight: 600;
     color: transparent;
+    text-align: center;
 }
 
 .img-text-wrapper:hover .subtitle{
@@ -131,10 +129,35 @@ body {
     transition: color 0.5s;
 }
 
+.footer-wrapper img{
+    height: 30px;
+    width: 30px;
+}
+
 .footer-link-wrapper:hover{
     border-bottom: 1px solid black;
 }
 
 .footer-link-wrapper a:hover{
     color: black;
+    
+}
+
+.portifolio-item-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 1rem auto;
+}
+
+.about-image {
+    height: 35rem;
+    width: 35rem;
+    align-self: center;
+}
+
+.description {
+    margin: 0 3rem;
+    padding: 15px 30px;
+    text-align: justify;
 }
